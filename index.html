@@ -89,7 +89,7 @@
             <a-asset-item id="soysauce" src="https://genkasaneiwa.github.io/kikkoman/assets/img/model/soysauce/kikkoman.gltf"></a-asset-item>
          </a-assets>
          <!-- ライトをいれるとデフォルトからこの設定に書き換わる -->
-         <a-light type="ambient" color="#fff"></a-light>
+         <a-entity light="type: ambient; intensity: 4;" color="#fff"></a-entity>
 
          <!--マーカー用 https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html-->
          <a-marker type="pattern" url="https://genkasaneiwa.github.io/kikkoman/assets/img/marker/marker.patt" registerevents>
@@ -106,7 +106,7 @@
                position="0 0 0"
                rotation="0 0 0"
                gltf-model="#soysauce"
-               scale="100 100 100"
+               scale="1 1 1"
                animation-mixer
             ></a-entity>
 

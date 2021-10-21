@@ -37,74 +37,74 @@
         },
         {
             "buffer": 0,
-            "byteLength": 60288,
+            "byteLength": 17472,
             "byteOffset": 52896,
             "target": 34963
         },
         {
             "buffer": 0,
-            "byteLength": 63336,
-            "byteOffset": 113184,
-            "target": 34962
-        },
-        {
-            "buffer": 0,
-            "byteLength": 63336,
-            "byteOffset": 176520,
-            "target": 34962
-        },
-        {
-            "buffer": 0,
-            "byteLength": 42224,
-            "byteOffset": 239856,
-            "target": 34962
-        },
-        {
-            "buffer": 0,
-            "byteLength": 4224,
-            "byteOffset": 282080,
-            "target": 34963
-        },
-        {
-            "buffer": 0,
-            "byteLength": 8100,
-            "byteOffset": 286304,
-            "target": 34962
-        },
-        {
-            "buffer": 0,
-            "byteLength": 8100,
-            "byteOffset": 294404,
-            "target": 34962
-        },
-        {
-            "buffer": 0,
-            "byteLength": 5400,
-            "byteOffset": 302504,
-            "target": 34962
-        },
-        {
-            "buffer": 0,
-            "byteLength": 17472,
-            "byteOffset": 307904,
-            "target": 34963
-        },
-        {
-            "buffer": 0,
             "byteLength": 18972,
-            "byteOffset": 325376,
+            "byteOffset": 70368,
             "target": 34962
         },
         {
             "buffer": 0,
             "byteLength": 18972,
-            "byteOffset": 344348,
+            "byteOffset": 89340,
             "target": 34962
         },
         {
             "buffer": 0,
             "byteLength": 12648,
-            "byteOffset": 363320,
+            "byteOffset": 108312,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4224,
+            "byteOffset": 120960,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 8100,
+            "byteOffset": 125184,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 8100,
+            "byteOffset": 133284,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5400,
+            "byteOffset": 141384,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 60288,
+            "byteOffset": 146784,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 63336,
+            "byteOffset": 207072,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 63336,
+            "byteOffset": 270408,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 42224,
+            "byteOffset": 333744,
             "target": 34962
         }
     ],
@@ -131,14 +131,14 @@
             "bufferView": 1,
             "byteOffset": 0,
             "min": [
-                -1.78539395332336,
-                0.0253094471991062,
-                -1.78539395332336
+                -0.0178539399057627,
+                -0.0348948463797569,
+                -0.0178539399057627
             ],
             "max": [
-                1.78539395332336,
-                5.41257381439209,
-                1.78539395332336
+                0.0178539399057627,
+                0.0189777966588736,
+                0.0178539399057627
             ]
         },
         {
@@ -158,38 +158,38 @@
         {
             "componentType": 5123,
             "type": "SCALAR",
-            "count": 30144,
+            "count": 8736,
             "bufferView": 4,
             "byteOffset": 0
         },
         {
             "componentType": 5126,
             "type": "VEC3",
-            "count": 5278,
+            "count": 1581,
             "bufferView": 5,
             "byteOffset": 0,
             "min": [
-                -1.76881301403046,
-                0.000224142073420808,
-                -1.76881301403046
+                -0.0122251054272056,
+                0.0308437813073397,
+                -0.0122251054272056
             ],
             "max": [
-                1.76881301403046,
-                6.56624269485474,
-                1.76881301403046
+                0.0122251054272056,
+                0.0398734696209431,
+                0.0122251054272056
             ]
         },
         {
             "componentType": 5126,
             "type": "VEC3",
-            "count": 5278,
+            "count": 1581,
             "bufferView": 6,
             "byteOffset": 0
         },
         {
             "componentType": 5126,
             "type": "VEC2",
-            "count": 5278,
+            "count": 1581,
             "bufferView": 7,
             "byteOffset": 0
         },
@@ -207,14 +207,14 @@
             "bufferView": 9,
             "byteOffset": 0,
             "min": [
-                -1.74136519432068,
-                0.0528665706515312,
-                -1.74136519432068
+                -0.0172600783407688,
+                -0.0343959741294384,
+                -0.0172600783407688
             ],
             "max": [
-                1.74136519432068,
-                5.15852880477905,
-                1.74136519432068
+                0.0172600783407688,
+                0.016210375353694,
+                0.0172600783407688
             ]
         },
         {
@@ -234,38 +234,38 @@
         {
             "componentType": 5123,
             "type": "SCALAR",
-            "count": 8736,
+            "count": 30144,
             "bufferView": 12,
             "byteOffset": 0
         },
         {
             "componentType": 5126,
             "type": "VEC3",
-            "count": 1581,
+            "count": 5278,
             "bufferView": 13,
             "byteOffset": 0,
             "min": [
-                -1.22251057624817,
-                6.51017570495605,
-                -1.22251057624817
+                -0.0176881290972233,
+                -0.0351456962525845,
+                -0.0176881290972233
             ],
             "max": [
-                1.22251057624817,
-                7.41314458847046,
-                1.22251057624817
+                0.0176881290972233,
+                0.0305144879966974,
+                0.0176881290972233
             ]
         },
         {
             "componentType": 5126,
             "type": "VEC3",
-            "count": 1581,
+            "count": 5278,
             "bufferView": 14,
             "byteOffset": 0
         },
         {
             "componentType": 5126,
             "type": "VEC2",
-            "count": 1581,
+            "count": 5278,
             "bufferView": 15,
             "byteOffset": 0
         }
@@ -288,31 +288,7 @@
     ],
     "materials": [
         {
-            "name": "soysauce_label",
-            "alphaMode": "OPAQUE",
-            "extras": {
-                "fromFBX": {
-                    "shadingModel": "Phong",
-                    "isTruePBR": false
-                }
-            },
-            "pbrMetallicRoughness": {
-                "baseColorTexture": {
-                    "index": 0,
-                    "texCoord": 0
-                },
-                "baseColorFactor": [
-                    0.800000011920929,
-                    0.800000011920929,
-                    0.800000011920929,
-                    1.0
-                ],
-                "metallicFactor": 0.400000005960464,
-                "roughnessFactor": 0.490532398223877
-            }
-        },
-        {
-            "name": "soysauce_bottle",
+            "name": "soysauce_cap",
             "alphaMode": "OPAQUE",
             "extras": {
                 "fromFBX": {
@@ -322,9 +298,9 @@
             },
             "pbrMetallicRoughness": {
                 "baseColorFactor": [
-                    0.400000005960464,
-                    0.400000005960464,
-                    0.400000005960464,
+                    0.620664417743683,
+                    0.0109617058187723,
+                    0.0147999403998256,
                     1.0
                 ],
                 "metallicFactor": 0.400000005960464,
@@ -352,7 +328,7 @@
             }
         },
         {
-            "name": "soysauce_cap",
+            "name": "soysauce_bottle",
             "alphaMode": "OPAQUE",
             "extras": {
                 "fromFBX": {
@@ -362,9 +338,33 @@
             },
             "pbrMetallicRoughness": {
                 "baseColorFactor": [
-                    0.620664417743683,
-                    0.0109617058187723,
-                    0.0147999403998256,
+                    0.400000005960464,
+                    0.400000005960464,
+                    0.400000005960464,
+                    1.0
+                ],
+                "metallicFactor": 0.400000005960464,
+                "roughnessFactor": 0.490532398223877
+            }
+        },
+        {
+            "name": "soysauce_label",
+            "alphaMode": "OPAQUE",
+            "extras": {
+                "fromFBX": {
+                    "shadingModel": "Phong",
+                    "isTruePBR": false
+                }
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0,
+                    "texCoord": 0
+                },
+                "baseColorFactor": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
                     1.0
                 ],
                 "metallicFactor": 0.400000005960464,
@@ -377,7 +377,7 @@
             "name": "label",
             "primitives": [
                 {
-                    "material": 0,
+                    "material": 3,
                     "mode": 4,
                     "attributes": {
                         "NORMAL": 2,
@@ -389,10 +389,10 @@
             ]
         },
         {
-            "name": "bottle",
+            "name": "cap",
             "primitives": [
                 {
-                    "material": 1,
+                    "material": 0,
                     "mode": 4,
                     "attributes": {
                         "NORMAL": 6,
@@ -407,7 +407,7 @@
             "name": "soysouce",
             "primitives": [
                 {
-                    "material": 2,
+                    "material": 1,
                     "mode": 4,
                     "attributes": {
                         "NORMAL": 10,
@@ -419,10 +419,10 @@
             ]
         },
         {
-            "name": "cap",
+            "name": "bottle",
             "primitives": [
                 {
-                    "material": 3,
+                    "material": 2,
                     "mode": 4,
                     "attributes": {
                         "NORMAL": 14,
@@ -454,11 +454,54 @@
                 1.0
             ],
             "children": [
-                1
+                1,
+                2,
+                3,
+                4
             ]
         },
         {
-            "name": "group1",
+            "name": "cap",
+            "translation": [
+                0.0,
+                -0.000889962539076805,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "mesh": 1
+        },
+        {
+            "name": "soysouce",
+            "translation": [
+                0.0,
+                8.2741207734216e-05,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.00889754295349,
+                1.00889754295349,
+                1.00889754295349
+            ],
+            "mesh": 2
+        },
+        {
+            "name": "bottle",
             "translation": [
                 0.0,
                 0.0,
@@ -475,12 +518,7 @@
                 1.0,
                 1.0
             ],
-            "children": [
-                2,
-                3,
-                4,
-                5
-            ]
+            "mesh": 3
         },
         {
             "name": "label",
@@ -501,66 +539,6 @@
                 1.0
             ],
             "mesh": 0
-        },
-        {
-            "name": "bottle",
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ],
-            "mesh": 1
-        },
-        {
-            "name": "soysouce",
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ],
-            "mesh": 2
-        },
-        {
-            "name": "cap",
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ],
-            "mesh": 3
         }
     ]
 }
