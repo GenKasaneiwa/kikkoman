@@ -1,129 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-      <meta http-equiv="Pragma" content="no-cache">
-      <meta http-equiv="Cache-Control" content="no-cache">
-      <meta http-equiv="Expires" content="0">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-      <meta name="robots" content="noindex">
+   <meta http-equiv="Pragma" content="no-cache">
+   <meta http-equiv="Cache-Control" content="no-cache">
+   <meta http-equiv="Expires" content="0">
 
-      <title>Kikkoman</title>
-      <meta name="description" content="Kikkoman">
+   <meta name="robots" content="noindex">
 
-      <link href="https://genkasaneiwa.github.io/kikkoman/assets/css/ar.css?v=1.1" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap"
-         rel="stylesheet">
-      <!-- materialアイコン-->
-      <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+   <title>Kikkoman</title>
+   <meta name="description" content="Kikkoman">
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <!-- ar.js用ファイル-->
-      <script
-         src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js">
-      </script>
-      <!-- 画像トラック用 マーカー時に入れているとおかしくなる-->
-      <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script> -->
-      <!-- マーカートラック用-->
-      <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-      <!-- クリック用-->
-      <script src="https://rawgit.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-click-events/events.js">
-      </script>
-      <!-- particle用-->
-      <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-      <!-- gltfアニメーション用 -->
-      <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>
-      <script>
-         AFRAME.registerComponent("registerevents", {
-            init: function() {
-               var marker = this.el;
-               var loader = document.getElementById("loader");
-               // var ar_show = document.getElementById("ar-show");
-               // var audio = document.getElementById("audio");
-               // var flag = document.querySelector('.vol-on');
+   <link href="https://genkasaneiwa.github.io/kikkoman/assets/css/ar.css?v=1.1" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+   <!-- materialアイコン-->
+   <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
 
-               // マーカーを検出したイベントの登録
-               marker.addEventListener("markerFound", function() {
-                  var markerId = marker.id;
-                  //animation start方法 https://qiita.com/1pp0/items/059d5e5936ca5196f7e4
-                  loader.style.display = "none";
-                  // ar_show.style.display = "block";
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!-- ar.js用ファイル-->
+   <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js">
+   </script>
+   <!-- 画像トラック用 マーカー時に入れているとおかしくなる-->
+   <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script> -->
+   <!-- マーカートラック用-->
+   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+   <!-- クリック用-->
+   <script src="https://rawgit.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-click-events/events.js">
+   </script>
+   <!-- particle用-->
+   <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+   <!-- gltfアニメーション用 -->
+   <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>
+   <script>
+      AFRAME.registerComponent("registerevents", {
+         init: function() {
+            var marker = this.el;
+            var loader = document.getElementById("loader");
+            // var ar_show = document.getElementById("ar-show");
+            // var audio = document.getElementById("audio");
+            // var flag = document.querySelector('.vol-on');
 
-                  // if (flag.classList.contains('js-on')) {
-                  //    audio.play(); // onのときのみ音声再生
-                  // }
+            // マーカーを検出したイベントの登録
+            marker.addEventListener("markerFound", function() {
+               var markerId = marker.id;
+               //animation start方法 https://qiita.com/1pp0/items/059d5e5936ca5196f7e4
+               loader.style.display = "none";
+               // ar_show.style.display = "block";
 
-               });
+               // if (flag.classList.contains('js-on')) {
+               //    audio.play(); // onのときのみ音声再生
+               // }
 
-               // マーカーを見失ったイベントの登録
-               marker.addEventListener("markerLost", function() {
-                  var markerId = marker.id;
-                  loader.style.display = "flex";
-                  // ar_show.style.display = "none";
-                  // audio.pause(); // 音声停止
-               });
-            },
-         });
-      </script>
-   </head>
+               // アニメーションの開始
+               document.querySelector('#kikkoman').emit('markerfound');
 
-   <body>
-      <div id="loader" class="loader">
-         <div class="loader__wrapper">
-            <p class="loader__para">please hold your phone up to the marker
-            </p>
-            <img class="loader__img" src="https://genkasaneiwa.github.io/kikkoman/assets/img/marker/marker.png" alt="marker">
-            <!-- <p class="loader__para">*music will start as soon as the marker matches</p> -->
-         </div>
+            });
+
+            // マーカーを見失ったイベントの登録
+            marker.addEventListener("markerLost", function() {
+               var markerId = marker.id;
+               loader.style.display = "flex";
+               // ar_show.style.display = "none";
+               // audio.pause(); // 音声停止
+
+               // アニメーションの停止
+               document.querySelector('#kikkoman').emit('markerlost');
+            });
+         },
+      });
+
+
+      //fade in component
+      AFRAME.registerComponent('model-relative-opacity', {
+        schema: {
+           opacityFactor: {
+              default: 1.0
+           }
+        },
+        init: function() {
+           this.nodeMap = {}
+           this.prepareMap.bind(this)
+           this.traverseMesh.bind(this)
+
+           this.el.addEventListener('model-loaded', e => {
+              this.prepareMap()
+              this.update()
+           });
+        },
+        prepareMap: function() {
+           this.traverseMesh(node => {
+              this.nodeMap[node.uuid] = node.material.opacity
+           })
+        },
+        update: function() {
+           this.traverseMesh(node => {
+              node.material.opacity = this.nodeMap[node.uuid] * this.data.opacityFactor
+              node.material.transparent = node.material.opacity < 1.0;
+              node.material.needsUpdate = true;
+           })
+        },
+        remove: function() {
+           this.traverseMesh(node => {
+              node.material.opacity = this.nodeMap[node.uuid]
+              node.material.transparent = node.material.opacity < 1.0;
+              node.material.needsUpdate = true;
+           })
+        },
+        traverseMesh: function(func) {
+           var mesh = this.el.getObject3D('mesh');
+           if (!mesh) {
+              return;
+           }
+           mesh.traverse(node => {
+              if (node.isMesh) {
+                 func(node)
+              }
+           });
+        }
+      });
+
+   </script>
+</head>
+
+<body>
+   <div id="loader" class="loader">
+      <div class="loader__wrapper">
+         <p class="loader__para">please hold your phone up to the marker
+         </p>
+         <img class="loader__img" src="https://genkasaneiwa.github.io/kikkoman/assets/img/marker/marker.png" alt="marker">
+         <!-- <p class="loader__para">*music will start as soon as the marker matches</p> -->
       </div>
+   </div>
 
-      <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
-         arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+   <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
 
-         <a-assets>
-            <a-asset-item id="soysauce" src="https://genkasaneiwa.github.io/kikkoman/assets/img/model/soysauce/kikkoman.gltf"></a-asset-item>
-         </a-assets>
-         <!-- ライトをいれるとデフォルトからこの設定に書き換わる -->
-         <a-entity light="type: ambient; intensity: 4;" color="#fff"></a-entity>
+      <a-assets>
+         <a-asset-item id="soysauce" src="https://genkasaneiwa.github.io/kikkoman/assets/img/model/soysauce/kikkoman.gltf"></a-asset-item>
 
-         <!--マーカー用 https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html-->
-         <a-marker type="pattern" url="https://genkasaneiwa.github.io/kikkoman/assets/img/marker/marker.patt" registerevents>
-            
-            <!-- <a-image id="target" src="" 
-               height="2" 
-               width="3"
-               scale="1 1 1"
-               position="1 1 1"
-               rotation="270 0 0">
-            </a-image> -->
+         <!-- 画像系 -->
+         <img id="60" src="./assets/img/60.png" style="opacity: .5">
+         <img id="kikkoman_en" src="./assets/img/kikkoman_en.png">
+         <img id="kikkoman_ja" src="./assets/img/kikkoman_ja.png">
+         <img id="logo" src="./assets/img/logo.png">
+         <img id="60_kanji" src="./assets/img/60_kanji.png">
+         <!-- <img id="leaf" src="./assets/img/leaf.png"> -->
+         <img id="aurora01" src="./assets/img/aurora01.png">
+         <img id="aurora02" src="./assets/img/aurora02.png">
+         <img id="obi" src="./assets/img/obi.png">
 
-            <a-entity   
-               position="0 .5 0"
+         <img id="ring" src="./assets/img/ring.png">
+         <!-- <img id="neon01" src="./assets/img/neon01.png"> -->
+
+         <img id="bg" src="./assets/img/bg.png">
+      </a-assets>
+      <!-- ライトをいれるとデフォルトからこの設定に書き換わる -->
+      <a-entity light="type: ambient; intensity: 3.5;" color="#fff"></a-entity>
+
+      <!--マーカー用 https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html-->
+      
+      <a-marker type="pattern" url="https://genkasaneiwa.github.io/kikkoman/assets/img/marker/marker.patt" registerevents>
+
+         <!-- ガイド: x:増えると右 減ると左 y: 増えると上へ減ると下へ  z:増えると手前へ 減ると奥へ-->
+         <!-- <a-entity id="kikkoman" position="0 .5 0" rotation="0 0 0" gltf-model="#soysauce" scale=".8 .33 .8">
+            <a-animation attribute="material.opacity" begin="markerfound" to="0"  end="markerlost" dur="5000"></a-animation>
+         </a-entity> -->
+         <a-entity position="0 .5 0" rotation="0 0 0" gltf-model="#soysauce" scale=".8 .33 .8" animation="property: rotation; to: 0 50000 0; loop: true; dur: 500000;" animation__2='property: model-relative-opacity.opacityFactor;
+               from: 0; to: 1; dur: 5000; startEvents: model-loaded' animation-mixer model-relative-opacity>
+         </a-entity>
+
+
+         <a-image src="#60" 
+               scale=".8 .2 .8"
+               position="-.6 .85 1.05"
                rotation="0 0 0"
-               gltf-model="#soysauce"
-               scale=".4 .33 .8"
-               animation-mixer
-            >
-               <a-animation attribute="rotation" from="0 0 0" to="0 360 0" dur="5000" repeat="indefinite" easing=”linear”></a-animation>
-            </a-entity>
+               >
+         </a-image>
 
-            <a-entity scale="0.01 0.01 0.01" fbx-model="src: url(https://genkasaneiwa.github.io/kikkoman/assets/img/model/soysauce/kikkoman.fbx);"></a-entity>
+         <a-image src="#kikkoman_en" 
+               scale="2 .15 1"
+               position="0 1 1"
+               rotation="0 0 0">
+         </a-image>
 
-            <!-- animation="property: rotation; to: 0 10000 0; loop: true; dur: 500000;" -->
-         
-            
-            <!-- 
+         <a-image src="#kikkoman_ja" 
+               scale="1 .1 1"
+               position=".5 .88 1"
+               rotation="0 0 0">
+         </a-image>
+
+         <a-image src="#logo" 
+               scale=".9 .3 .9"
+               position=".7 1.3 .8"
+               rotation="0 0 0"
+               animation="property: rotation; to: 0 -100000 0; loop: true; dur: 500000;"
+               >
+         </a-image>
+
+         <a-image src="#60_kanji" 
+               scale=".3 .4 1"
+               position="1 1.55 .3"
+               rotation="0 0 0"
+               >
+         </a-image>
+
+         <!-- <a-image src="#leaf" 
+               scale=".9 .3 .9"
+               position="0 1.3 .8"
+               rotation="0 0 0"
+               >
+         </a-image> -->
+
+         <a-image src="#aurora01" 
+               scale=".3 1 .9"
+               position=".3 2 1.7"
+               rotation="0 0 0"
+               >
+         </a-image>
+
+         <a-image src="#aurora02" 
+               scale=".15 1 .9"
+               position="-.5 2 1.7"
+               rotation="0 0 0"
+               >
+         </a-image>
+
+         <a-image src="#obi" 
+               scale="1 2 1"
+               position="-.7 1.3 .8"
+               rotation="0 0 0"
+               >
+         </a-image>
+
+         <a-image src="#ring" 
+               scale="1 .2 1"
+               position="-1 1.5 .5"
+               rotation="0 0 0"
+               >
+         </a-image>
+
+         <!-- <a-image src="#neon01" 
+               scale="3 2 0" 
+               position="0 .5 0" 
+               rotation="0 0 0"
+               >
+         </a-image> -->
+
+     
+         <!-- <a-plane  
+         height="10" width="20"
+         position="0 .8 0"
+         rotation="0 0 0"
+         material="opacity: 1"
+         src="#bg"
+         ></a-plane> -->
+
+         <!-- <a-entity scale="0.01 0.01 0.01" fbx-model="src: url(https://genkasaneiwa.github.io/kikkoman/assets/img/model/soysauce/kikkoman.fbx);"></a-entity> -->
+
+         <!-- animation="property: rotation; to: 0 10000 0; loop: true; dur: 500000;" -->
+
+
+         <!-- 
             x +にすると右による
             y -にすると近づく 
             z -にすると上に上がる
             -->
-            
-            <!-- <a-image
+
+         <!-- <a-image
                src="https://genkasaneiwa.github.io/ar-js//fluff_festival/assets/img/marker.jpg"
                width="300"
                height="300"
@@ -133,16 +281,17 @@
                >
             </a-image> -->
 
-            <!-- <a-text id="text" position="145 -10 -200" rotation="270 0 0" value="" color="white" width="700" align="center"></a-text> -->
+         <!-- <a-text id="text" position="145 -10 -200" rotation="270 0 0" value="" color="white" width="700" align="center"></a-text> -->
 
       </a-marker>
-         
-         <a-entity camera></a-entity>
-      </a-scene>
+
+      <a-entity camera></a-entity>
+   </a-scene>
 
 
-      <script>
-        
-      </script>
-   </body>
+   <script>
+
+   </script>
+</body>
+
 </html>
