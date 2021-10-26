@@ -160,7 +160,18 @@
          <img id="bg" src="./assets/img/bg.png">
       </a-assets>
       <!-- ライトをいれるとデフォルトからこの設定に書き換わる -->
-      <a-entity light="type: ambient; intensity: 2.9;" color="#fff"></a-entity>
+      <a-entity light="type: hemisphere; color: #682973; groundColor: #f26091; intensity: 1"></a-entity>
+
+      <a-entity light="type: directional; color: #682973; intensity: 1.5; castShadow: true;" position="-2 1 0"></a-entity>
+      <a-entity light="type: directional; color: #f26091; intensity: 1.5; castShadow: true;" position="0 1 0"></a-entity>
+      <a-entity light="type: directional; color: #4d6fb2; intensity: 1.5; castShadow: true;" position="2 1 0"></a-entity>
+
+
+      <a-entity light="type: spot; angle: 45;" scale="2.1 .1 1"
+      position="0 1 1"
+      rotation="0 0 0"></a-entity>
+
+      <!-- <a-entity light="type: point; intensity: 0.75; distance: 50; decay: 2" position="0 0 -1"></a-entity> -->
 
       <!--マーカー用 https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html-->
       
@@ -175,6 +186,7 @@
             rotation="0 0 0" 
             gltf-model="#soysauce" 
             scale=".8 .28 .8" 
+            
             animation="property: rotation; to: 0 50000 0; loop: true; dur: 500000;" 
             animation__2='property: model-relative-opacity.opacityFactor;
                from: 0; to: 1; dur: 5000; startEvents: model-loaded' 
@@ -186,6 +198,7 @@
                scale=".65 .15 .8"
                position="-.6 .88 1.05"
                rotation="0 0 0"
+               shadow="receive: true"
                >
          </a-image>
 
