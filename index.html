@@ -5,7 +5,6 @@
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width,initial-scale=1" />
-
    <meta http-equiv="Pragma" content="no-cache">
    <meta http-equiv="Cache-Control" content="no-cache">
    <meta http-equiv="Expires" content="0">
@@ -15,7 +14,7 @@
    <title>Kikkoman</title>
    <meta name="description" content="Kikkoman">
 
-   <link href="https://genkasaneiwa.github.io/kikkoman/assets/css/ar.css?v=1.1" rel="stylesheet">
+   <link href="./assets/css/ar.css?v=1.1" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
    <!-- materialアイコン-->
@@ -182,20 +181,105 @@
             <a-animation attribute="material.opacity" begin="markerfound" to="0"  end="markerlost" dur="5000"></a-animation>
          </a-entity> -->
          <a-entity 
-            position="0 .5 0" 
+            position="0 0 0" 
             rotation="0 0 0" 
             gltf-model="#soysauce" 
-            scale=".8 .28 .8" 
+            scale=".4 .4 .4" 
+
             
             animation="property: rotation; to: 0 50000 0; loop: true; dur: 500000;" 
             animation__2='property: model-relative-opacity.opacityFactor;
                from: 0; to: 1; dur: 5000; startEvents: model-loaded' 
             animation-mixer model-relative-opacity>
          </a-entity>
+         <!-- <a-entity 
+            position="0 .5 0" 
+            rotation="0 0 0" 
+            gltf-model="#soysauce" 
+            scale=".7 .18 .8" 
+
+            
+            animation="property: rotation; to: 0 50000 0; loop: true; dur: 500000;" 
+            animation__2='property: model-relative-opacity.opacityFactor;
+               from: 0; to: 1; dur: 5000; startEvents: model-loaded' 
+            animation-mixer model-relative-opacity>
+         </a-entity> -->
 
 
          <a-image src="#60" 
-               scale=".65 .15 .8"
+               scale=".3 .3 .3"
+               position="-.35 .78 1.05"
+               rotation="0 0 0"
+               shadow="receive: true"
+               >
+         </a-image>
+
+         <a-image src="#kikkoman_en" 
+               scale="1 .2 1"
+               position="0 1 1"
+               rotation="0 0 0"
+               >
+         </a-image>
+
+         <a-image src="#kikkoman_ja" 
+               scale=".4 .08 1"
+               position=".24 .85 1"
+               rotation="0 0 0">
+         </a-image>
+
+         <a-image src="#logo" 
+               scale=".3 .3 .9"
+               position=".31 1.3 .8"
+               rotation="0 0 0"
+               animation="property: rotation; to: 0 -100000 0; loop: true; dur: 500000;"
+               >
+         </a-image>
+
+         <a-image src="#60_kanji" 
+               scale=".1 .4 1"
+               position=".4 1.55 .3"
+               rotation="0 0 0"
+               >
+         </a-image>
+
+         <!-- <a-image src="#leaf" 
+               scale=".9 .3 .9"
+               position="0 1.3 .8"
+               rotation="0 0 0"
+               >
+         </a-image> -->
+
+         <a-image src="#aurora01" 
+               scale=".9 1 .9"
+               position=".6 2 -.5"
+               rotation="0 0 0"
+               >
+         </a-image>
+
+         <a-image src="#aurora02" 
+               scale=".9 1 .9"
+               position="-.5 1.8 -.5"
+               rotation="0 0 0"
+               >
+         </a-image>
+
+         <a-image src="#obi" 
+               scale="1 3 1"
+               position="-.7 1.3 .8"
+               rotation="0 0 0"
+               >
+         </a-image>
+
+         <a-image src="#ring" 
+               scale="1 1 1"
+               position="-1 1.5 .5"
+               rotation="0 0 0"
+               >
+         </a-image>
+
+
+         <!-- <a-image src="#60" 
+               <!-- scale=".65 .15 .8"
                position="-.6 .88 1.05"
                rotation="0 0 0"
                shadow="receive: true"
@@ -221,14 +305,14 @@
                rotation="0 0 0"
                animation="property: rotation; to: 0 -100000 0; loop: true; dur: 500000;"
                >
-         </a-image>
+         </a-image> -->
 
-         <a-image src="#60_kanji" 
+         <!-- <a-image src="#60_kanji" 
                scale=".3 .4 1"
                position="1 1.55 .3"
                rotation="0 0 0"
                >
-         </a-image>
+         </a-image> -->
 
          <!-- <a-image src="#leaf" 
                scale=".9 .3 .9"
@@ -237,7 +321,7 @@
                >
          </a-image> -->
 
-         <a-image src="#aurora01" 
+         <!-- <a-image src="#aurora01" 
                scale=".3 1 .9"
                position=".3 2 1.7"
                rotation="0 0 0"
@@ -263,7 +347,7 @@
                position="-1 1.5 .5"
                rotation="0 0 0"
                >
-         </a-image>
+         </a-image> --> -->
 
          <!-- <a-image src="#neon01" 
                scale="3 2 0" 
